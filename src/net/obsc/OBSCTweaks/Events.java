@@ -29,13 +29,11 @@ public class Events implements Listener {
         if(inventory.getType() == InventoryType.ENCHANTING)
         {
             inventory.setItem(1, new ItemStack(Material.LAPIS_LAZULI, 3));
-            Print("Added Lapis");
         }
     }
 
     @EventHandler
     public void InventoryClickEvent(InventoryClickEvent event) {
-        Print("attempting cancel of InventoryClickEvent");
         if( event.getClickedInventory() == null ) {
             return;
         }
@@ -49,7 +47,6 @@ public class Events implements Listener {
     @EventHandler
     public void InventoryCloseEvent(InventoryCloseEvent event) {
         if(event.getInventory().getType() == InventoryType.ENCHANTING) {
-            Print("removing lapis from inv");
             Inventory inv = event.getInventory();
             inv.setItem(1, null);
         }
