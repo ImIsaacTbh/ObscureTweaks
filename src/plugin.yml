@@ -1,0 +1,5 @@
+﻿name: ObscureTweaks
+version: 0.0.1
+author: ImIsaacTbh
+main: net.obsc.OBSCTweaks.OBSCTweaks
+api-version: 1.21.11
